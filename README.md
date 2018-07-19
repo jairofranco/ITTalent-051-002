@@ -3,7 +3,7 @@ Proyecto para veeduría ciudadana.
 ## Subtitulo
 contenido
 ##Problema
-lipsum
+lipsum    
 ##Descripción
 lipsum
 ##Solución
