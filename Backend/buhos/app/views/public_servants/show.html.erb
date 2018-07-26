@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @public_servant.name %>
+</p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @public_servant.document %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @public_servant.position %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @public_servant.age %>
+</p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @public_servant.period %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @public_servant.salary %>
+</p>
+
+<%= link_to 'Edit', edit_public_servant_path(@public_servant) %> |
+<%= link_to 'Back', public_servants_path %>

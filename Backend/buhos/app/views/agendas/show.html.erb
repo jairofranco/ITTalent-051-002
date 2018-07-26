@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dateagenda:</strong>
+  <%= @agenda.dateAgenda %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @agenda.description %>
+</p>
+
+<p>
+  <strong>Tags:</strong>
+  <%= @agenda.tags %>
+</p>
+
+<p>
+  <strong>Public servants:</strong>
+  <%= @agenda.public_servants %>
+</p>
+
+<%= link_to 'Edit', edit_agenda_path(@agenda) %> |
+<%= link_to 'Back', agendas_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Totalvalue:</strong>
+  <%= @budget.totalValue %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @budget.education %>
+</p>
+
+<p>
+  <strong>Security:</strong>
+  <%= @budget.security %>
+</p>
+
+<p>
+  <strong>Healt:</strong>
+  <%= @budget.healt %>
+</p>
+
+<p>
+  <strong>Transport:</strong>
+  <%= @budget.transport %>
+</p>
+
+<p>
+  <strong>Infraestructure:</strong>
+  <%= @budget.infraestructure %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @budget.other %>
+</p>
+
+<p>
+  <strong>Cities:</strong>
+  <%= @budget.cities %>
+</p>
+
+<%= link_to 'Edit', edit_budget_path(@budget) %> |
+<%= link_to 'Back', budgets_path %>

@@ -1,0 +1,57 @@
+<%= form_with(model: budget, local: true) do |form| %>
+  <% if budget.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(budget.errors.count, "error") %> prohibited this budget from being saved:</h2>
+
+      <ul>
+      <% budget.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :totalValue %>
+    <%= form.text_field :totalValue %>
+  </div>
+
+  <div class="field">
+    <%= form.label :education %>
+    <%= form.text_field :education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :security %>
+    <%= form.text_field :security %>
+  </div>
+
+  <div class="field">
+    <%= form.label :healt %>
+    <%= form.text_field :healt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transport %>
+    <%= form.text_field :transport %>
+  </div>
+
+  <div class="field">
+    <%= form.label :infraestructure %>
+    <%= form.text_field :infraestructure %>
+  </div>
+
+  <div class="field">
+    <%= form.label :other %>
+    <%= form.text_field :other %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cities_id %>
+    <%= form.text_field :cities_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

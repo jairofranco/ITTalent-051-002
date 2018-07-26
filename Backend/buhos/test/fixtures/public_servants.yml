@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  document: MyText
+  position: MyText
+  age: 1
+  period: MyText
+  salary: 1
+
+two:
+  name: MyText
+  document: MyText
+  position: MyText
+  age: 1
+  period: MyText
+  salary: 1

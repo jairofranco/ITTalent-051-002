@@ -1,0 +1,2 @@
+class PublicServant < ApplicationRecord
+end

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Public Servants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Document</th>
+      <th>Position</th>
+      <th>Age</th>
+      <th>Period</th>
+      <th>Salary</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @public_servants.each do |public_servant| %>
+      <tr>
+        <td><%= public_servant.name %></td>
+        <td><%= public_servant.document %></td>
+        <td><%= public_servant.position %></td>
+        <td><%= public_servant.age %></td>
+        <td><%= public_servant.period %></td>
+        <td><%= public_servant.salary %></td>
+        <td><%= link_to 'Show', public_servant %></td>
+        <td><%= link_to 'Edit', edit_public_servant_path(public_servant) %></td>
+        <td><%= link_to 'Destroy', public_servant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Public Servant', new_public_servant_path %>

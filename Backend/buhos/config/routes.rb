@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  resources :users
+  get 'home/index'
+  devise_for :users
+  resources :budgets
+  resources :agendas
+  resources :public_servants
   resources :cities
-  resources :activities
+  resources :events
+  root :to => "home#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
